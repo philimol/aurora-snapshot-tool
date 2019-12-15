@@ -16,11 +16,11 @@
 
 # Override S3 destination by changing this variable or setting it in the
 # environment
-S3DEST?=aurorasnapshotcode
+S3DEST?=[YOUR BUCKET HERE]
 
 # Set these if, for example, you use profiles on the AWS command line
 # or if your 'aws' executable is in a weird place.
-AWSARGS=--region us-east-1
+AWSARGS=--region [YOUR REGION] --profile [YOUR PROFILE, or 'default', or remove this]
 AWSCMD=aws
 ZIPCMD=zip
 
